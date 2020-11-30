@@ -1,0 +1,25 @@
+{
+  "projectsInfo": [
+    {
+      "projectTitle": "Hand Gesture KeyMouse",
+      "projectLink": "https://themuhammadkhalid.github.io/hand-gesture-keymouse/",
+      "projectImg": "hgKeyMouseImage",
+      "writtenIn": ["python"],
+      "projectDescription": "A Computer Vision based project for controlling mouse and keyboard events like mouse clicks, keystrokes or etc. by using Hand Gestures."
+    },
+    {
+      "projectTitle": "Alien Invasion",
+      "projectLink": "https://themuhammadkhalid.github.io/alien-invasion/",
+      "projectImg": "planeImage",
+      "writtenIn": ["python"],
+      "projectDescription": "Alien Invasion is a game which is written in python programming language with the help of pygame module."
+    },
+    {
+      "projectTitle": "Sticky Notes",
+      "projectLink": "https://themuhammadkhalid.github.io/sticky-notes/",
+      "projectImg": "stickyNotesImage",
+      "writtenIn": ["javascript"],
+      "projectDescription": "Sticky Notes is a simple WebApp which is written in javascript programming language and used its local storage API."
+    }
+  ]
+}

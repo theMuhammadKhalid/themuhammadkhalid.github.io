@@ -1,0 +1,247 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  /* Include content, padding and border in elements total width and height */
+  box-sizing: border-box;
+}
+
+#homeMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: medium;
+  width: 100%;
+  max-height: 100vh;
+  padding: 0px 30px;
+  font: bold 4vw/1.5 Arial, sans-serif;
+  color: #4d4d4d;
+}
+
+#name {
+  color: black;
+}
+
+#profession {
+  color: #333333;
+}
+
+.homeA {
+  color: #1877f2;
+  padding: 0.1vw 0.5vw;
+}
+
+.homeA:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+#work {
+  padding: 0px 20px;
+}
+
+#header {
+  font: bold 200%/1.5 Arial, sans-serif;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+#filterContainer,
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+/* Style the filter buttons */
+.filterBtn {
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  margin: 1% 1% 0% 0%;
+  font: normal 100% Arial, sans-serif;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Add a light grey background on mouse-over */
+.filterBtn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.filterBtn.active {
+  background-color: #333333;
+  color: white;
+}
+
+#projects {
+  margin-top: 2%;
+}
+
+.project {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+  font: normal 100% Arial, sans-serif;
+  max-width: 400px;
+  height: 220px;
+  margin: 0% 2% 2% 0%;
+}
+
+.projectImg {
+  max-width: 30%;
+  padding: 0px 10px 0px 10px;
+}
+
+.rightSide {
+  height: 90%;
+  padding: 0px 10px 0px 10px;
+  border-left: 2px solid black;
+}
+
+.projectTitle {
+  text-decoration: underline;
+  overflow: hidden;
+  height: 30px;
+  font-size: 120%;
+}
+
+.projectDescription {
+  margin: 5px 0px;
+  height: 92px;
+  overflow: hidden;
+  color: #333333;
+}
+
+.writtenIn {
+  padding: 5px 0px;
+  font-size: 17px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.writtenIn > * {
+  margin-right: 10px;
+}
+
+.writtenInIcons {
+  font-size: 22px;
+}
+
+.viewProject {
+  display: inline-block;
+  margin-top: 5px;
+  color: #1877f2;
+  font: normal 125% Arial, sans-serif;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+#footer > * {
+  text-decoration: none;
+  font: bold 150% Arial, sans-serif;
+  color: #1877f2;
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    text-align: center;
+    font-size: 150%;
+  }
+  .project {
+    height: 190px;
+  }
+  .projectTitle {
+    font-size: 95%;
+    height: 20px;
+  }
+  .projectDescription {
+    font-size: 80%;
+    height: 82px;
+  }
+  .writtenIn {
+    font-size: 14px;
+    padding: 4px 0px;
+  }
+  .writtenInIcons {
+    font-size: 18px;
+  }
+  .viewProject {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #header {
+    font-size: 100%;
+  }
+  .filterBtn {
+    font-size: 80%;
+    padding: 6px 10px;
+  }
+  .project {
+    height: 175px;
+  }
+  .projectTitle {
+    font-size: 58%;
+    height: 15px;
+  }
+  .projectDescription {
+    font-size: 70%;
+  }
+  .writtenIn {
+    font-size: 10px;
+    padding: 2px 0px;
+  }
+  .writtenInIcons {
+    font-size: 13px;
+  }
+  .viewProject {
+    font-size: 64%;
+  }
+  #footer > * {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  #header,
+  .filterBtn {
+    font-size: 60%;
+  }
+  .project {
+    height: 170px;
+  }
+  .projectTitle {
+    font-size: 50%;
+    height: 12px;
+  }
+  .projectDescription {
+    font-size: 60%;
+    height: 84px;
+  }
+  .writtenIn {
+    font-size: 8px;
+    padding: 1px 0px;
+  }
+  .writtenInIcons {
+    font-size: 10px;
+  }
+  .viewProject {
+    font-size: 50%;
+  }
+}
