@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 class Home extends React.Component {
   constructor(props) {
@@ -16,9 +16,10 @@ class Home extends React.Component {
 
     return (
       <React.Fragment>
-         <Helmet>
+        <Helmet>
           <title>Home | Muhammad Khalid</title>
         </Helmet>
+
         <main id="homeMain">
           <p>
             Hi there, I'm{" "}
@@ -45,7 +46,11 @@ class Home extends React.Component {
               View my work
             </Link>{" "}
             and you can contact me via{" "}
-            <a href="mailto:themuhammadkhalid@gmail.com" className="homeA">
+            <a
+              href="mailto:themuhammadkhalid@gmail.com"
+              className="homeA"
+              title="Contact me"
+            >
               mail
             </a>{" "}
             and you can also follow me by checking my{" "}
@@ -70,7 +75,7 @@ class Home extends React.Component {
       display: inline-flex;
       overflow: hidden;
       white-space: nowrap;
-      border-right: 3px solid #333333;
+      border-right: 2.5px solid;
       animation: animateProfession 10s; 
     }
 
